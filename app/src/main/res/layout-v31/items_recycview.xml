@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@android:color/system_accent1_10">
+
+    <ImageView
+        android:id="@+id/img_items"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/art_clear"/>
+
+    <TextView
+        android:id="@+id/tv1_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày Mai"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_items"/>
+    <TextView
+        android:id="@+id/tv2_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trời nắng"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv1_items"
+        app:layout_constraintStart_toEndOf="@id/img_items"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv3_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16°"
+        android:textSize="25dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv4_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16°"
+        android:textSize="15dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tv3_items"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

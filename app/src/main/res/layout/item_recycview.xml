@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:layout_height="200dp">
+
+    <com.example.sunshine_recycview_app.custom_Texview.custom_textview
+        android:id="@+id/day_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hôm Nay,10 tháng 7"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hightT_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="32°"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/day_items"/>
+    <TextView
+        android:id="@+id/lowT_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16°"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toEndOf="@id/hightT_items"
+        app:layout_constraintTop_toBottomOf="@id/day_items"/>
+    <com.example.sunshine_recycview_app.custom_Texview.custom_textview
+        android:id="@+id/tv4_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hà Nội,VN"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/hightT_items"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_items"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/art_clear"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.sunshine_recycview_app.custom_Texview.custom_textview
+        android:id="@+id/weather_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Có nắng"
+        android:textColor="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_items" />
+</androidx.constraintlayout.widget.ConstraintLayout>
